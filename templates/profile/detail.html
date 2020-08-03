@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="profile-detail" data-username={{username}}></div>
+<div class="display-4">My Tweets</div>
+<div  id='tweetme' data-username={{username}} data-canTweet=false></div>
+{% endblock %}

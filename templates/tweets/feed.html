@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+
+<div  class='my-3'>
+<div id="tweetmeFeed"></div>
+</div>
+{% else %}
+<div id = 'tweetme' data-canTweet=false></div>
+{% endif %}
+{% endblock %}
